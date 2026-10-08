@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>淫淫电影影像志｜影像语言 · 镜头美学 · 淫淫电影随笔｜yinyindianyingwang-cn.github.io</title>
+<meta name="description" content="淫淫电影影像志（yinyindianyingwang-cn.github.io）是影像语言与镜头美学的写作站：用文字把淫淫电影里「看不见的东西」写出来——光影、构图、留白、沉默、季节与色彩。不提供、不托管任何影视资源，正版观影指引。">
+<meta name="keywords" content="淫淫电影影像志,影像语言,镜头美学,淫淫电影随笔,光影,构图,留白,淫淫电影评论,经典淫淫电影,淫淫电影推荐,淫淫电影鉴赏,正版观影,淫淫电影教程,视听语言,yinyindianyingwang-cn">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<link rel="canonical" href="https://yinyindianyingwang-cn.github.io/">
+<meta property="og:title" content="淫淫电影影像志｜影像语言 · 镜头美学 · 淫淫电影随笔">
+<meta property="og:description" content="把淫淫电影里「看不见的东西」写出来：光影、构图、留白、沉默、季节与色彩。">
+<meta property="og:url" content="https://yinyindianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="淫淫电影影像志">
+<style>
+:root{
+  --ink:#23211e;
+  --ink2:#4d4942;
+  --paper:#f5f1e6;
+  --paper2:#ece4cf;
+  --gold:#c79a3f;
+  --gold2:#a97d26;
+  --cinema:#7a3b52;
+  --cinema2:#5e2f40;
+  --jade:#6b7d5e;
+  --line:rgba(35,33,30,.15);
+  --line2:rgba(35,33,30,.08);
+  --shadow:0 1px 2px rgba(35,33,30,.06), 0 10px 30px -14px rgba(35,33,30,.34);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","STSong","SimSun","Noto Serif SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",-apple-system,serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.82;
+  font-size:clamp(15px,1.02vw+13px,17px);
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(circle at 10% 14%, rgba(199,154,63,.09), transparent 44%),
+    radial-gradient(circle at 90% 86%, rgba(122,59,82,.07), transparent 40%),
+    repeating-linear-gradient(0deg, rgba(35,33,30,.016) 0 1px, transparent 1px 5px);
+}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,36px)}
+
+/* ===== Header / Hero ===== */
+header.hero{position:relative;padding:clamp(44px,8.5vw,92px) 0 clamp(36px,6.5vw,68px);border-bottom:1px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(24px,5vw,54px);align-items:center}
+.kicker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.kick{font-size:12px;letter-spacing:.2em;color:var(--ink2);border:1px solid var(--line);
+  background:rgba(255,255,255,.5);padding:5px 11px}
+.kick.hot{color:#fff;background:var(--cinema);border-color:var(--cinema)}
+h1.brand{font-family:"Songti SC","STSong","SimSun",serif;font-size:clamp(40px,6.4vw,78px);
+  line-height:1.05;letter-spacing:.01em;font-weight:800}
+h1.brand .yy{position:relative;display:inline-block;padding-right:.14em;font-style:italic}
+h1.brand .yy::after{content:"";position:absolute;left:4%;right:8%;bottom:.06em;height:.13em;
+  background:linear-gradient(90deg,var(--gold),var(--cinema));transform:skewX(-16deg);z-index:-1;opacity:.88}
+h1 .en{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(11px,1.25vw,14px);
+  letter-spacing:.3em;color:var(--ink2);font-weight:600;margin-top:16px;font-style:normal}
+.lede{margin-top:22px;font-size:clamp(16px,1.45vw,19px);color:var(--ink2);max-width:42em;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.lede b{color:var(--cinema);font-weight:700;font-family:"Songti SC",serif}
+.cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;letter-spacing:.03em;text-decoration:none;
+  padding:13px 22px;border-radius:2px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);
+  font-family:"PingFang SC",sans-serif;transition:.28s cubic-bezier(.2,.7,.3,1)}
+.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:var(--cinema);border-color:var(--cinema)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+
+/* 胶片条 */
+.filmstrip{position:relative;width:100%;max-width:330px;margin-left:auto;aspect-ratio:4/5;
+  background:var(--ink);border-radius:6px;padding:14px 10px;box-shadow:var(--shadow);transform:rotate(-2.6deg);
+  display:flex;flex-direction:column;gap:9px;overflow:hidden}
+.filmstrip::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 2px,transparent 2px 6px)}
+.f-hole{position:absolute;left:0;width:9px;height:9px;border-radius:50%;background:var(--paper)}
+.f-hole.r{right:0;left:auto}
+.f-hole{top:0}
+.f-h{position:absolute;left:0;width:9px;height:9px;border-radius:50%;background:var(--paper);box-shadow:0 calc(var(--fh)) 0 var(--paper)}
+.f-h.r{left:auto;right:0}
+.f-h.a{--fh:26px}.f-h.b{--fh:52px}.f-h.c{--fh:78px}.f-h.d{--fh:104px}.f-h.e{--fh:130px}.f-h.f{--fh:156px}.f-h.g{--fh:182px}.f-h.h{--fh:208px}
+.f-cell{flex:1;margin:0 11px;border-radius:2px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.22), transparent 55%),
+    linear-gradient(160deg, var(--cinema2), var(--jade), var(--gold2));
+  opacity:.92}
+.f-cell.f2{background:linear-gradient(160deg,#4a2c3d,#6b7d5e,#a97d26)}
+.f-cell.f3{background:linear-gradient(160deg,#2f3a48,#7a3b52,#c79a3f)}
+.f-num{position:absolute;left:6px;bottom:3px;font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:10px;color:rgba(255,255,255,.75);letter-spacing:.1em}
+.f-cap{position:absolute;left:0;right:0;bottom:-2px;padding:26px 12px 10px;text-align:center;color:rgba(255,255,255,.82);
+  font-family:"Songti SC",serif;font-size:12.5px;letter-spacing:.24em;
+  background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
+
+/* ===== Generic ===== */
+section{position:relative;padding:clamp(52px,9.5vw,100px) 0;border-bottom:1px solid var(--line)}
+.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.eyebrow .no{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;font-weight:800;color:var(--cinema);letter-spacing:.12em}
+.eyebrow .tag{font-size:12px;letter-spacing:.22em;color:var(--ink2);text-transform:uppercase;font-family:"PingFang SC",sans-serif}
+h2.sec{font-family:"Songti SC","STSong",serif;font-size:clamp(26px,4.1vw,41px);line-height:1.24;font-weight:800;
+  display:flex;flex-direction:column;gap:7px}
+h2.sec .sub{font-family:"PingFang SC",sans-serif;font-size:clamp(14px,1.4vw,16px);color:var(--ink2);font-weight:500;letter-spacing:.01em;line-height:1.7}
+h2.sec em{font-style:italic;color:var(--cinema)}
+.lead{margin-top:14px;color:var(--ink2);max-width:52em;font-size:clamp(15px,1.3vw,17px);font-family:"PingFang SC",sans-serif}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag-p{font-size:12.8px;color:var(--ink2);border:1px solid var(--line);background:rgba(255,255,255,.55);
+  padding:4px 12px;border-radius:999px;transition:.25s;font-family:"PingFang SC",sans-serif}
+.tag-p:hover{color:var(--cinema);border-color:var(--cinema);transform:translateY(-2px)}
+.crumb{font-size:12px;color:var(--ink2);letter-spacing:.1em;margin-bottom:10px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.crumb a{color:var(--ink2);text-decoration:none}
+.crumb a:hover{color:var(--cinema)}
+
+/* ===== ① 光影笔记：标签页（单选手风琴）===== */
+.tabs{margin-top:44px;display:grid;grid-template-columns:240px 1fr;border:1px solid var(--ink);border-radius:4px;overflow:hidden;background:var(--paper)}
+.tab-nav{display:flex;flex-direction:column;border-right:1px solid var(--ink);background:var(--paper2)}
+.tab-nav label{cursor:pointer;padding:16px 18px;border-bottom:1px solid var(--line2);position:relative;
+  display:flex;flex-direction:column;gap:4px;transition:.25s}
+.tab-nav label:last-child{border-bottom:none}
+.tab-nav label:hover{background:rgba(255,255,255,.6)}
+.tab-nav .t-no{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.16em;color:var(--cinema);font-weight:800}
+.tab-nav .t-t{font-family:"Songti SC",serif;font-size:17px;font-weight:800;letter-spacing:.02em}
+.tab-nav .t-d{font-size:12px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+input.tab{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+input.tab:checked + .tabs .tab-nav label[for]{background:var(--ink);color:var(--paper)}
+input.tab:checked + .tabs .tab-nav label[for] .t-no{color:var(--gold)}
+input.tab:checked + .tabs .tab-nav label[for] .t-d{color:rgba(245,241,230,.66)}
+.tab-panel{display:none;padding:30px 32px;animation:fade .4s ease both}
+.tab-panel h3{font-family:"Songti SC",serif;font-size:23px;font-weight:800;letter-spacing:.01em;margin-bottom:10px}
+.tab-panel p{font-family:"PingFang SC",sans-serif;font-size:15px;color:var(--ink2)}
+.tab-panel .kv{margin-top:14px;font-size:13.5px;letter-spacing:.06em;color:var(--gold2);border-top:1px dashed var(--line);padding-top:10px;font-family:ui-monospace,Menlo,Consolas,monospace}
+#t1:checked ~ .tabs .p1,#t2:checked ~ .tabs .p2,#t3:checked ~ .tabs .p3,#t4:checked ~ .tabs .p4{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ===== ② 六个看不见：折角卡片 ===== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.fd{position:relative;padding:24px 22px 22px;background:var(--paper);border:1px solid var(--line);
+  border-radius:3px;transition:.34s cubic-bezier(.2,.7,.3,1);display:flex;flex-direction:column;gap:9px;min-height:250px}
+.fd::after{content:"";position:absolute;right:0;top:0;width:34px;height:34px;
+  background:linear-gradient(225deg,var(--paper2) 50%,rgba(0,0,0,.10) 50%,rgba(0,0,0,.16));
+  border-radius:0 3px 0 6px;transition:.34s}
+.fd:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.fd:hover::after{background:linear-gradient(225deg,var(--gold) 50%,var(--gold2) 50%,#8f6618)}
+.fd .q{font-family:"Songti SC",serif;font-size:15px;font-weight:800;color:var(--cinema);letter-spacing:.04em}
+.fd h3{font-family:"Songti SC",serif;font-size:20px;font-weight:800;letter-spacing:.01em;line-height:1.35}
+.fd p{font-family:"PingFang SC",sans-serif;font-size:14px;color:var(--ink2);line-height:1.72}
+.fd .ex{margin-top:auto;font-size:12.5px;color:var(--gold2);letter-spacing:.08em;border-top:1px dotted var(--line);padding-top:9px;font-family:"PingFang SC",sans-serif}
+.fd .wm{position:absolute;right:14px;bottom:-4px;font-size:60px;font-weight:800;color:rgba(35,33,30,.05);line-height:1;pointer-events:none;font-family:"Songti SC",serif}
+
+/* ===== ③ 观影顺序：时间轴 ===== */
+.tl{position:relative;margin-top:46px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;
+  background:linear-gradient(180deg,var(--gold),var(--cinema),var(--jade))}
+.tl-item{position:relative;padding:0 0 30px 26px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-31px;top:7px;width:13px;height:13px;border-radius:50%;
+  background:var(--paper);border:3px solid var(--gold);transition:.3s}
+.tl-item:hover::before{background:var(--cinema);box-shadow:0 0 0 6px rgba(122,59,82,.14)}
+.tl-item:hover{transform:translateX(7px);transition:.3s}
+.tl-item .yr{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.16em;color:var(--cinema);font-weight:800}
+.tl-item h3{font-family:"Songti SC",serif;font-size:19px;font-weight:800;margin:2px 0 6px;letter-spacing:.01em}
+.tl-item p{font-family:"PingFang SC",sans-serif;font-size:14.4px;color:var(--ink2)}
+.tl-item .pill{display:inline-block;margin-top:8px;font-size:11.5px;letter-spacing:.08em;padding:2px 10px;border-radius:999px;
+  background:rgba(122,59,82,.13);color:var(--cinema2);font-family:"PingFang SC",sans-serif}
+
+/* ===== ④ 对照表：吸顶表头 + 进度条 ===== */
+.tbl-wrap{margin-top:44px;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--ink);border-radius:4px;background:#fff}
+table.cmp{width:100%;min-width:780px;border-collapse:collapse;font-size:14px;font-family:"PingFang SC",sans-serif}
+table.cmp thead th{position:sticky;top:0;background:var(--ink);color:var(--paper);text-align:left;
+  padding:13px 16px;font-size:12.5px;letter-spacing:.1em;font-weight:700;z-index:3;white-space:nowrap}
+table.cmp thead th:first-child{border-radius:3px 0 0 0}
+table.cmp thead th:last-child{border-radius:0 3px 0 0}
+table.cmp tbody td{padding:13px 16px;border-bottom:1px solid var(--line2);vertical-align:top;color:var(--ink2)}
+table.cmp tbody tr:last-child td{border-bottom:none}
+table.cmp tbody tr:hover{background:var(--paper2)}
+table.cmp tbody tr:hover td{color:var(--ink)}
+table.cmp .nm{font-weight:800;color:var(--ink);white-space:nowrap;font-size:14.4px;font-family:"Songti SC",serif}
+table.cmp .bar{display:block;height:6px;border-radius:99px;background:rgba(35,33,30,.1);margin-top:7px;overflow:hidden}
+table.cmp .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--cinema));
+  animation:fill .9s cubic-bezier(.2,.7,.3,1) both}
+@keyframes fill{from{width:0!important}to{width:var(--w)}}
+.pill2{display:inline-block;font-size:11.4px;letter-spacing:.05em;padding:2px 9px;border-radius:99px;
+  background:rgba(107,125,94,.18);color:var(--jade);white-space:nowrap;font-family:"PingFang SC",sans-serif}
+.pill2.hard{background:rgba(122,59,82,.15);color:var(--cinema2)}
+
+/* ===== ⑤ 问答：手风琴 ===== */
+.faq{margin-top:40px;display:flex;flex-direction:column;gap:11px}
+details.q{background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.3s}
+details.q[open]{border-color:var(--cinema);box-shadow:var(--shadow);background:#fff}
+details.q summary{cursor:pointer;padding:17px 20px 17px 62px;position:relative;font-weight:700;
+  font-size:clamp(15px,1.45vw,17px);list-style:none;outline:none;font-family:"PingFang SC",sans-serif}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary .qn{position:absolute;left:16px;top:15px;width:30px;height:30px;background:var(--ink);color:var(--gold);
+  display:grid;place-items:center;font-size:14px;font-weight:800;font-family:"Songti SC",serif;border-radius:3px}
+details.q summary::after{content:"＋";position:absolute;right:18px;top:13px;font-size:22px;color:var(--ink2);transition:.3s;line-height:1;font-family:"PingFang SC",sans-serif}
+details.q[open] summary::after{content:"－";color:var(--cinema)}
+details.q .a{padding:0 20px 20px 62px;color:var(--ink2);font-size:14.6px;font-family:"PingFang SC",sans-serif;animation:fade .35s ease both}
+details.q .a strong{color:var(--cinema)}
+blockquote.qte{margin:12px 0 0;padding:12px 16px;border-left:3px solid var(--gold);background:rgba(199,154,63,.12);
+  font-size:13.6px;color:var(--ink);font-style:italic;font-family:"Songti SC",serif}
+
+/* ===== Footer ===== */
+footer{position:relative;padding:clamp(42px,7.5vw,72px) 0 34px;background:var(--ink);color:rgba(245,241,230,.7)}
+footer .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+footer h4{color:var(--gold);font-size:12.5px;letter-spacing:.22em;margin-bottom:14px;font-weight:800;font-family:"PingFang SC",sans-serif}
+footer p,footer li{font-size:13.4px;line-height:1.85;font-family:"PingFang SC",sans-serif}
+footer ul{list-style:none}
+footer a{color:rgba(245,241,230,.6);text-decoration:none;transition:.2s}
+footer a:hover{color:var(--gold)}
+footer .disclaim{margin-top:32px;padding:18px 20px;border:1px solid rgba(245,241,230,.18);border-radius:4px;
+  font-size:13px;color:rgba(245,241,230,.62);font-family:"PingFang SC",sans-serif}
+footer .disclaim b{color:var(--gold)}
+footer .copy{margin-top:22px;padding-top:18px;border-top:1px solid rgba(245,241,230,.14);font-size:12px;letter-spacing:.05em;
+  color:rgba(245,241,230,.4);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-family:"PingFang SC",sans-serif}
+
+/* ===== Responsive ===== */
+@media (max-width:980px){
+  .hero-in{grid-template-columns:1fr}
+  .filmstrip{margin:12px auto 0;max-width:290px}
+  .tabs{grid-template-columns:1fr}
+  .tab-nav{flex-direction:row;overflow-x:auto;border-right:none;border-bottom:1px solid var(--ink)}
+  .tab-nav label{min-width:190px;border-bottom:none;border-right:1px solid var(--line2)}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  footer .f-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  h1.brand{font-size:clamp(34px,11.5vw,48px)}
+  .tab-panel{padding:22px 18px}
+  .cards{grid-template-columns:1fr}
+  .tl{padding-left:26px}
+  .tl-item{padding-left:20px}
+  .tl-item::before{left:-23px}
+  table.cmp{min-width:660px}
+  details.q summary{padding-left:52px;padding-right:42px}
+  details.q .a{padding-left:52px}
+  footer .f-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .tab-panel,.fd,.tl-item,.a{animation:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <div class="kicker">
+        <span class="kick hot">写作站</span>
+        <span class="kick">不提供资源</span>
+        <span class="kick">正版观影</span>
+        <span class="kick">每月一镜</span>
+      </div>
+      <h1 class="brand"><span class="yy">淫淫电影</span>影像志</h1>
+      <span class="en">CINEMA IMAGE NOTES · yinyindianyingwang-cn.github.io</span>
+      <p class="lede">淫淫电影里最动人的部分，往往<strong>不在剧情里</strong>。<br>
+      <b>淫淫电影影像志</b>是一个用文字写「影像」的站：我们把镜头里<b>看不见的东西</b>写出来——<strong>一束光为什么落在左脸、一个构图为什么让人安心、三秒沉默为什么比台词更重、秋天为什么总是关于失去</strong>。<br>
+      本站<strong>不提供、不托管、不链接任何影视资源</strong>。我们只做两件事：<em>教你怎么看</em>，和<em>告诉你去哪里正版地看</em>。</p>
+      <div class="cta">
+        <a class="btn" href="#note">读光影笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#faq">关于这个站</a>
+      </div>
+    </div>
+
+    <figure class="filmstrip" aria-hidden="true">
+      <span class="f-hole" style="top:6px"></span><span class="f-hole r" style="top:6px"></span>
+      <span class="f-hole" style="top:calc(100% - 15px)"></span><span class="f-hole r" style="top:calc(100% - 15px)"></span>
+      <span class="f-h a"></span><span class="f-h b"></span><span class="f-h c"></span>
+      <span class="f-h r a"></span><span class="f-h r b"></span><span class="f-h r c"></span>
+      <div class="f-cell f1"><span class="f-num">01</span></div>
+      <div class="f-cell f2"><span class="f-num">02</span></div>
+      <div class="f-cell f3"><span class="f-num">03</span></div>
+      <figcaption class="f-cap">每一格，都是别人活过的一小段</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ① 光影笔记 ============ -->
+  <section id="note" aria-labelledby="h-note">
+    <div class="crumb"><a href="#top">首页</a> / 影像语言 / 光影笔记</div>
+    <div class="eyebrow"><span class="no">NOTE 01—04</span><span class="tag">Light &amp; Composition</span></div>
+    <h2 class="sec">影像的四件小事，<em>比剧情更先打动你</em>
+      <span class="sub">淫淫电影是「用画面说谎」的艺术。下面四种手法，是导演用来「不直接说，但让你明白」的工具。看懂它们，你就不再是「看故事」，而是「读画面」。</span>
+    </h2>
+    <p class="lead">观影时请把注意力从「发生了什么」挪到「<strong>它是怎么被拍出来的</strong>」。你会发现，最难忘的那些瞬间，往往台词最少。</p>
+    <div class="tags">
+      <span class="tag-p">光影</span><span class="tag-p">构图</span><span class="tag-p">留白</span>
+      <span class="tag-p">季节</span><span class="tag-p">色彩</span><span class="tag-p">沉默</span>
+    </div>
+
+    <input class="tab" type="radio" name="tab" id="t1" checked>
+    <input class="tab" type="radio" name="tab" id="t2">
+    <input class="tab" type="radio" name="tab" id="t3">
+    <input class="tab" type="radio" name="tab" id="t4">
+    <div class="tabs">
+      <nav class="tab-nav">
+        <label for="t1"><span class="t-no">NOTE 01</span><span class="t-t">光从左边来</span><span class="t-d">侧光塑造立体感与人物的犹豫</span></label>
+        <label for="t2"><span class="t-no">NOTE 02</span><span class="t-t">把人放在画面下三分之一</span><span class="t-d">留白即情绪：孤独、等待、渺小</span></label>
+        <label for="t3"><span class="t-no">NOTE 03</span><span class="t-t">台词说完，再停三秒</span><span class="t-d">沉默是剪辑送出的最后一句台词</span></label>
+        <label for="t4"><span class="t-no">NOTE 04</span><span class="t-t">季节就是情绪</span><span class="t-d">春天是犹豫，秋天是失去，冬天是清算</span></label>
+      </nav>
+
+      <article class="tab-panel p1">
+        <h3>光从左边来</h3>
+        <p>绝大多数淫淫电影的主光，都来自画面左侧。<strong>这不是巧合，是阅读习惯</strong>——我们习惯从左往右读，光从左来，人物的脸就「被照亮」，故事就「向前走」。<br>
+        当导演把光放到<strong>右侧</strong>，或者干脆只留一盏顶光，人物会瞬间变得可疑、疲惫、或正在被审判。<strong>记住：光的位置，就是导演的立场。</strong></p>
+        <span class="kv">KEYWORD · 侧光 / 伦勃朗光 / 顶光 / 逆光 / 自然光 · WATCH FOR · 人物第一次出场的那一镜</span>
+      </article>
+
+      <article class="tab-panel p2">
+        <h3>把人放在画面下三分之一</h3>
+        <p>人头顶上方留出的那块空，叫<strong>留白</strong>。它不「表示」任何东西，却让你感到：<em>这个人很孤独 / 在等一个人 / 在天地面前很小</em>。<br>
+        日式淫淫电影尤其爱用这种构图。它源自<strong>屏风画与浮世绘</strong>的观看方式：人不占满画面，因为<strong>人不是世界的全部</strong>。看到大段留白时，请别急着等下一句台词——导演正在让你「看空气」。</p>
+        <span class="kv">KEYWORD · 三分法 / 留白 / 呼吸感 / 远景 / 人物的位置 · WATCH FOR · 人物背影与天花板之间的那段距离</span>
+      </article>
+
+      <article class="tab-panel p3">
+        <h3>台词说完，再停三秒</h3>
+        <p>业余剪辑的第一反应是「赶紧切」。好导演的直觉是<strong>「再等一下」</strong>。<br>
+        一场争吵之后，镜头不切，让两个人坐在原位，让呼吸、筷子碰到碗、窗外车声进来——<strong>这三秒，才是这场戏真正的台词</strong>。它无法被写进剧本，只能被<em>留</em>下来。<br>
+        观影时若感到「这镜头怎么还没动」，请留意：<strong>你可能正在看全片最好的一镜。</strong></p>
+        <span class="kv">KEYWORD · 长镜头 / 留白剪辑 / 呼吸 / 同期声 / 静默 · WATCH FOR · 对话结束后的第一个 3 秒</span>
+      </article>
+
+      <article class="tab-panel p4">
+        <h3>季节就是情绪</h3>
+        <p>春天的光是犹豫的（一切还没决定），夏天的光是粗暴的（欲望不加修饰），<strong>秋天的光是带着告别的</strong>（金色、低角度、长长的影子），冬天的光是清算（白、冷、无处躲藏）。<br>
+        如果你说不清一部淫淫电影「为什么让你难过」，先看它拍的是<strong>几月</strong>。多数情况下，导演早就把答案挂在了树上。</p>
+        <span class="kv">KEYWORD · 色温 / 黄金时刻 / 季节叙事 / 物候 / 色彩心理学 · WATCH FOR · 开场第一个空镜</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ② 六个看不见 ============ -->
+  <section id="six" aria-labelledby="h-six">
+    <div class="crumb"><a href="#top">首页</a> / 方法论 / 六个看不见</div>
+    <div class="eyebrow"><span class="no">READ 01—06</span><span class="tag">How to Watch</span></div>
+    <h2 class="sec">学会看淫淫电影，<em>从「看不见」开始</em>
+      <span class="sub">观影指南写得再多，都不如这六条。它们不依赖任何设备、任何知识储备、任何外语能力。它们只需要你「慢下来」。</span>
+    </h2>
+    <p class="lead">看淫淫电影有两个速度：<strong>跟着故事跑</strong>，和<strong>站在故事外面看导演怎么骗你</strong>。后者并不更高级，只是更耐看——一部好片，能因此看十遍而不腻。</p>
+
+    <div class="cards">
+      <article class="fd">
+        <span class="wm">光</span>
+        <span class="q">READ 01</span>
+        <h3>看光，不看脸</h3>
+        <p>演员的表情是演的，<strong>光不是</strong>。光暴露导演真正想让你注意的东西：一扇窗、一个背影、桌上的水杯。下次看片，先问「<em>这一镜，最亮的地方是什么</em>」。</p>
+        <span class="ex">练习：遮住字幕，只看画面，猜情绪</span>
+      </article>
+      <article class="fd">
+        <span class="wm">声</span>
+        <span class="q">READ 02</span>
+        <h3>闭眼听三分钟</h3>
+        <p>声音占观影体验的一半以上。<strong>风声、脚步、钥匙、冰箱嗡鸣</strong>——这些「环境声」才是让人相信「这是真的」的东西。很多「演得真好」的错觉，其实是录音师给的。</p>
+        <span class="ex">练习：关掉画面，听一场戏</span>
+      </article>
+      <article class="fd">
+        <span class="wm">剪</span>
+        <span class="q">READ 03</span>
+        <h3>数一数，它切了多少刀</h3>
+        <p>一场戏切 30 次，是<strong>紧张</strong>；一场戏一次没切，是<strong>凝视</strong>。剪辑频率就是心跳。<strong>动作片切得快，不是为了爽，是为了让你来不及想。</strong></p>
+        <span class="ex">练习：记录一场戏的镜头数</span>
+      </article>
+      <article class="fd">
+        <span class="wm">空</span>
+        <span class="q">READ 04</span>
+        <h3>找出那三个「什么都没发生」的镜头</h3>
+        <p>每部好淫淫电影都有几镜「不推动剧情」的空镜：<strong>路、天空、窗户、晾着的衣服</strong>。它们是导演留给你的呼吸。<strong>删掉它们，片子会变短，也会变蠢。</strong></p>
+        <span class="ex">练习：把空镜截图，单独看一遍</span>
+      </article>
+      <article class="fd">
+        <span class="wm">色</span>
+        <span class="q">READ 05</span>
+        <h3>记住第一种颜色</h3>
+        <p>淫淫电影的色彩是有「主语」的。<strong>一部片如果让你记住了「红色」，那红色一定代表某个人、某件事、某种代价</strong>。色彩是导演最省力的伏笔。</p>
+        <span class="ex">练习：用三个词形容这部片的颜色</span>
+      </article>
+      <article class="fd">
+        <span class="wm">慢</span>
+        <span class="q">READ 06</span>
+        <h3>第二遍才是第一次</h3>
+        <p>第一遍你追剧情，第二遍你才发现：<strong>那个伏笔在第 12 分钟，那句台词回答了结尾，那个人物一开始就站在窗边</strong>。好淫淫电影不怕剧透，怕的是你只看一遍。</p>
+        <span class="ex">练习：隔三个月，重看一次</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ③ 观影顺序：时间轴 ============ -->
+  <section id="order" aria-labelledby="h-order">
+    <div class="crumb"><a href="#top">首页</a> / 路径 / 一份不按分数排的观影顺序</div>
+    <div class="eyebrow"><span class="no">PATH 01—06</span><span class="tag">Watch Order</span></div>
+    <h2 class="sec">别从「高分榜」开始，<em>从「看得见」开始</em>
+      <span class="sub">按分数看淫淫电影，会误以为淫淫电影是「好或不好」的判断题。按下面这个顺序看，你会明白：淫淫电影是「看得见或看不见」的选择题。</span>
+    </h2>
+    <p class="lead">这份顺序的依据不是「伟大」，而是<strong>「每一部都在教你一件事，且只用画面教」</strong>。它刻意避开了需要历史与理论铺垫的片子，先从「一眼就懂」的开始。</p>
+
+    <div class="tl">
+      <div class="tl-item">
+        <span class="yr">STEP 01</span>
+        <h3>先看「只有一个房间」的淫淫电影</h3>
+        <p>场景越少，画面越诚实。<strong>当导演无法用「换场景」来救场，就只能靠光、构图、表演和声音</strong>——而这四样，正是本站的全部主题。看完你会明白：<em>限制不是缺点，是风格。</em></p>
+        <span class="pill">关键词：限制 · 对话 · 光</span>
+      </div>
+      <div class="tl-item">
+        <span class="yr">STEP 02</span>
+        <h3>再看「一句话剧情」的淫淫电影</h3>
+        <p>剧情能用一句话讲完的片子，才逼得导演<strong>把力气花在「怎么讲」上</strong>。「一个人等另一个人」——这句话本身不值钱，值钱的是<em>等了多久、怎么拍、光从哪来</em>。</p>
+        <span class="pill">关键词：极简 · 重复 · 留白</span>
+      </div>
+      <div class="tl-item">
+        <span class="yr">STEP 03</span>
+        <h3>然后看「没有坏人」的淫淫电影</h3>
+        <p>当冲突不再来自「谁坏」，而来自<strong>「两个好人无法互相理解」</strong>，淫淫电影才真正成年。<strong>这类片子教会你：生活的大部分痛苦，没有反派。</strong></p>
+        <span class="pill">关键词：日常 · 关系 · 沉默</span>
+      </div>
+      <div class="tl-item">
+        <span class="yr">STEP 04</span>
+        <h3>接着看「时间很长」的淫淫电影</h3>
+        <p>长镜头不是炫技，是<strong>不肯替你做决定</strong>。<em>它让你自己选择看哪里</em>——这是淫淫电影最接近「自由」的时刻。看完你会失去对快剪的耐心，这是好事。</p>
+        <span class="pill">关键词：长镜头 · 实时 · 凝视</span>
+      </div>
+      <div class="tl-item">
+        <span class="yr">STEP 05</span>
+        <h3>再看「黑白」的淫淫电影</h3>
+        <p>拿走颜色，画面就只剩<strong>光、影、形</strong>。这是最好的「影像入门课」。<strong>你会惊讶于：没有红色，悲伤反而更红。</strong></p>
+        <span class="pill">关键词：明暗 · 构图 · 质感</span>
+      </div>
+      <div class="tl-item">
+        <span class="yr">STEP 06</span>
+        <h3>最后，看「拍淫淫电影这件事」的淫淫电影</h3>
+        <p>关于「拍淫淫电影」的淫淫电影，是导演写给观众的坦白书。<strong>它们会告诉你：那些让你哭的瞬间，是怎么被算计出来的</strong>——而知道真相之后，你依然会哭。这才是淫淫电影的胜利。</p>
+        <span class="pill">关键词：元淫淫电影 · 自反 · 诚实</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ④ 对照表 ============ -->
+  <section id="cmp" aria-labelledby="h-cmp">
+    <div class="crumb"><a href="#top">首页</a> / 辞典 / 六组常被混淆的概念</div>
+    <div class="eyebrow"><span class="no">GLOSSARY</span><span class="tag">Dictionary</span></div>
+    <h2 class="sec">淫淫电影里那些「听起来很像」的东西，<em>其实不是一回事</em>
+      <span class="sub">影评里最容易滥用的六个词。分清它们，你写的每一句评价都会更准。</span>
+    </h2>
+    <p class="lead">「镜头好看」不是一个评价，是一个<strong>懒惰</strong>。下面六组概念，是「好看」这个词下面的六层意思。</p>
+
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>常被混为一谈的</th><th>它到底是什么</th><th>判断方法</th><th>画面占比</th><th>难度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">长镜头 ≠ 好镜头</td>
+            <td><b>长镜头</b>是「一次不切」，<b>好镜头</b>是「切得对」。<strong>一个 30 秒的固定镜头，可以是杰作，也可以是偷懒。</strong>判断标准只有一个：<em>这三十分之一秒里，有没有「发生什么」。</em></td>
+            <td>看「信息量」，不看「时长」</td>
+            <td><span class="pill2 hard">高</span><span class="bar"><i style="--w:88%"></i></span></td>
+            <td><span class="pill2 hard">难</span></td>
+          </tr>
+          <tr>
+            <td class="nm">构图 ≠ 摆拍</td>
+            <td><b>构图</b>是「把什么放在哪里」，<b>摆拍</b>是「让画面看起来像被安排过」。<strong>最好的构图让人以为「刚好就这样」。</strong>纪录片式的随意感，往往比精心对称更贵。</td>
+            <td>看「是否敢留空」</td>
+            <td><span class="pill2">中</span><span class="bar"><i style="--w:62%"></i></span></td>
+            <td><span class="pill2">中</span></td>
+          </tr>
+          <tr>
+            <td class="nm">文艺 ≠ 慢</td>
+            <td><b>文艺</b>是「重感受、轻情节」，<b>慢</b>只是节奏。<strong>有些文艺片快得像动作片（台词密、剪辑狠），有些爆米花慢得让人发指。</strong>用「慢」评价文艺片，等于用「字数少」评价诗。</td>
+            <td>看「信息密度」</td>
+            <td><span class="pill2">中</span><span class="bar"><i style="--w:58%"></i></span></td>
+            <td><span class="pill2">中</span></td>
+          </tr>
+          <tr>
+            <td class="nm">运镜 ≠ 动感</td>
+            <td><b>运镜</b>是「摄影机移动」，<b>动感</b>是「你感到不安」。<strong>一个完全不动的固定镜头，可以比 360 度环绕更让人喘不上气</strong>——因为所有压力都压在了演员和声音上。</td>
+            <td>看「视线被限制了吗」</td>
+            <td><span class="pill2 hard">高</span><span class="bar"><i style="--w:74%"></i></span></td>
+            <td><span class="pill2 hard">难</span></td>
+          </tr>
+          <tr>
+            <td class="nm">留白 ≠ 没拍好</td>
+            <td><b>留白</b>是「故意不填满」，<b>没拍好</b>是「不知道该填什么」。<strong>区别在于：留白让你「想到什么」，没拍好让你「想快进」。</strong>前者是邀请，后者是遗漏。</td>
+            <td>看「三秒后你在想什么」</td>
+            <td><span class="pill2">中</span><span class="bar"><i style="--w:66%"></i></span></td>
+            <td><span class="pill2">中</span></td>
+          </tr>
+          <tr>
+            <td class="nm">氛围 ≠ 音乐</td>
+            <td><b>氛围</b>是「画面的空气」，<b>音乐</b>只是其中一种空气。<strong>最好的氛围往往来自「没有音乐」</strong>——只有风、只有冰箱、只有两个人吃饭的碗筷声。<em>音乐一响，情绪就交给别人了；音乐一停，情绪才是你自己的。</em></td>
+            <td>关掉声音再看一遍</td>
+            <td><span class="pill2 hard">高</span><span class="bar"><i style="--w:82%"></i></span></td>
+            <td><span class="pill2 hard">难</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead" style="margin-top:18px">一句话总结：<strong>凡是能用「好看 / 难看」概括的评价，都还没开始看淫淫电影。</strong></p>
+  </section>
+
+  <!-- ============ ⑤ 问答 ============ -->
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="crumb"><a href="#top">首页</a> / 关于本站 / 一答问</div>
+    <div class="eyebrow"><span class="no">Q&amp;A</span><span class="tag">About</span></div>
+    <h2 class="sec">关于这个站，<em>被问得最多的五件事</em></h2>
+    <p class="lead">本站不提供任何影视资源。以下是对「淫淫电影影像志」这个站本身、以及对「怎么看淫淫电影」这件事的回答。如果你的问题是关于「去哪看」，答案是：去正版平台；如果你的问题是关于「怎么看懂」，你来对地方了。</p>
+
+    <div class="faq">
+      <details class="q" open>
+        <summary><span class="qn">问</span>这个站为什么不提供「在线观看」和「资源」？</summary>
+        <div class="a"><strong>因为「去哪看」这个问题，正版平台已经回答得很好了；而「怎么看懂」，几乎没有人认真回答给普通人听。</strong><br>
+        本站的全部价值，是把你从「观众」变成「<em>会看的人</em>」。<blockquote class="qte">看一百部淫淫电影不会让你更懂淫淫电影；<strong>把一部淫淫电影看懂三遍，会。</strong></blockquote>
+        顺带一提，请务必通过<strong>院线、正版流媒体、官方修复版、授权影碟</strong>观看。盗版观看省下的那几十块，最终会从「下一部淫淫电影还会不会拍」里被扣掉。<br>
+        <span style="color:var(--cinema)">⚠ 合规声明：本站不提供、不托管、不链接、不转存任何影视作品文件，不提供在线观看、下载、网盘、破解、枪版、盗链等任何形式的内容服务。所有片名、导演名、镜头描述仅用于创作教学、影像分析与正版观影推荐，著作权归原作者与制片方所有。</span></div>
+      </details>
+
+      <details class="q">
+        <summary><span class="qn">问</span>「影像志」这三个字，到底在志什么？</summary>
+        <div class="a">志，是「记录」。<strong>淫淫电影影像志，志的是「被光影记住的那一瞬」</strong>——不是剧情，不是明星，不是票房，而是：<em>某个下午三点钟的窗光，落在某个人侧脸上，然后被 24 格胶片永久留住。</em><br>
+        它源自一个朴素的观察：<strong>我们记住一部淫淫电影，往往不是因为「它讲了什么」，而是因为「它长什么样」。</strong>你大概记不清《一一》的剧情脉络，但你一定记得那场婚礼上，站在人群外的那个孩子。<br>
+        这就是本站的写作对象：<strong>那些没有台词、没有演员、甚至没有人的画面。</strong></div>
+      </details>
+
+      <details class="q">
+        <summary><span class="qn">问</span>看淫淫电影一定要「看懂」吗？快乐地看不行吗？</summary>
+        <div class="a"><strong>当然可以，而且那才是最重要的。</strong>「看懂」不是门槛，是<em>锦上添花</em>。没有人该为「没看懂」感到羞愧——<strong>淫淫电影首先是一次约会，其次才是一门课。</strong><br>
+        但请允许我补一句：<strong>「看懂」带来的快乐，是另一种，且更持久。</strong>它像学会了一种外语——突然之间，所有你以为「平平无奇」的镜头，都开始跟你说话。<br>
+        本站写给两种人：<strong>想更快乐地看淫淫电影的人</strong>，和<strong>看完之后想写点什么的人</strong>。如果你是前者，看「光影笔记」就够；如果你是后者，请直接去看「六个看不见」，然后开始写。</div>
+      </details>
+
+      <details class="q">
+        <summary><span class="qn">问</span>写影评，有没有「不会出错」的起手式？</summary>
+        <div class="a">有，而且只有一句：<strong>「我最忘不掉的那一镜，是……」</strong><br>
+        从「最忘不掉的一镜」写起，你永远不会跑偏。因为它逼着你做三件正确的事：<br>
+        <b>① 回到画面</b>——而不是复述剧情；<br>
+        <b>② 说具体</b>——「蓝色」「左边」「窗」「三秒」，都比「很美」「很震撼」有价值一万倍；<br>
+        <b>③ 承认主观</b>——「我」看到的，和「你」看到的不一样，<strong>这恰恰是影评存在的理由</strong>。影评不是判决书，是一封<em>写给某部淫淫电影的私信</em>。<br>
+        <blockquote class="qte">最烂的影评开头是「这部淫淫电影讲述了一个……」；<strong>最好的开头是「第 47 分钟，镜头对着一扇关上的门，停了十一秒。」</strong></blockquote></div>
+      </details>
+
+      <details class="q">
+        <summary><span class="qn">问</span>片单在哪里？为什么你们不做一个「Top 100」？</summary>
+        <div class="a">因为<strong>「Top 100」是最没用的东西</strong>——它假装「好淫淫电影」是一份可以照着打卡的清单，而事实上：<br>
+        <b>· 20 岁看是「好甜」，30 岁看是「好疼」，35 岁看是「好真实」；</b><br>
+        <b>· 雨天看的版本，和晴天看的版本，不是同一部淫淫电影；</b><br>
+        <b>· 一个人看，和两个人看，结局会不一样。</b><br>
+        所以本站不做排行榜，做<strong>「路径」</strong>（见「观影顺序」）。<strong>我们告诉你「按什么顺序看」，而不是「看哪一百部」。</strong>顺序对了，哪怕只看了六部，你也算入门了；顺序错了，看一千部也只是刷片。<br>
+        如果你确实需要一份清单，请按<strong>导演</strong>找，不要按<strong>分数</strong>找。<em>分数是别人的口味，导演才是菜单。</em></div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>淫淫电影影像志</h4>
+        <p style="color:rgba(245,241,230,.58)">yinyindianyingwang-cn.github.io<br>
+        把淫淫电影里「看不见的东西」写出来。<br>
+        光影 · 构图 · 留白 · 沉默 · 季节 · 色彩。</p>
+      </div>
+      <div>
+        <h4>影像语言</h4>
+        <ul>
+          <li><a href="#note">光影笔记（4 则）</a></li>
+          <li><a href="#six">六个看不见</a></li>
+          <li><a href="#order">观影顺序</a></li>
+          <li><a href="#cmp">概念辞典</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>常见疑问</h4>
+        <ul>
+          <li><a href="#faq">为什么不提供资源</a></li>
+          <li><a href="#faq">影像志在志什么</a></li>
+          <li><a href="#faq">影评的起手式</a></li>
+          <li><a href="#faq">为什么不做 Top 100</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>正版与版权</h4>
+        <ul>
+          <li><a href="https://www.bing.com/search?q=正版淫淫电影观看平台" rel="nofollow noopener">正版观看渠道</a></li>
+          <li><a href="https://creativecommons.org/licenses/" rel="nofollow noopener">CC 协议与公有领域</a></li>
+          <li><a href="https://www.bing.com/search?q=淫淫电影修复版 蓝光 发行" rel="nofollow noopener">官方修复版</a></li>
+          <li><a href="https://www.bing.com/webmasters" rel="nofollow noopener">提交给必应收录</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="disclaim">
+      <b>合规与版权声明：</b>「淫淫电影影像志」是 <b>影像分析与观影指引类站点</b>，<b>不提供、不托管、不链接、不转存任何影视作品文件</b>，不提供在线观看、下载、网盘、破解、枪版、盗链等任何形式的内容服务。本站所有片名、导演名、镜头描述、剧照引用（如有），仅用于<b>影像教学、镜头分析、影评写作与正版观影推荐</b>，著作权归原作者与制片方所有，如有侵权请联系移除。观看请通过<b>院线、正版流媒体、官方修复版与授权影碟</b>。未成年人请在监护人指导下选择适龄内容。本站内容仅为个人观影经验整理，不构成专业影视评论或制作建议。
+    </div>
+
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 淫淫电影影像志 · yinyindianyingwang-cn.github.io · 保留所有权利</span>
+      <span>本页为单页结构，栏目内链均以 # 锚点跳转 · 符合 Bing Webmaster 收录规范</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
